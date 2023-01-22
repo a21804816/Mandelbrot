@@ -37,10 +37,7 @@ The maximum number of iterations can be modified by changing the maxIt variable.
 | :---         |     :---:      |          :---: | :---: |
 | Mandelbrot CPU   | 4096 x 4096   | 100   |  88.57   |
 | Mandelbrot GPU   | 4096 x 4096   | 100     |  0.58   |
-
-
-| Method | Image Size | Max Iterations | Execution Time (seconds) |
-| :---         |     :---:      |          :---: | :---: |
+| | | | |
 | Mandelbrot CPU   | 4096 x 4096   | 1000   |  702.43  |
 | Mandelbrot GPU   | 4096 x 4096   | 1000     |  1.92   |
 
