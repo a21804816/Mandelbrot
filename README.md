@@ -38,6 +38,21 @@ The maximum number of iterations can be modified by changing the maxIt variable.
 | Mandelbrot CPU   | 4096 x 4096   | 100   |  88.57   |
 | Mandelbrot GPU   | 4096 x 4096   | 100     |  0.58   |
 
+
+| Method | Image Size | Max Iterations | Execution Time (seconds) |
+| :---         |     :---:      |          :---: | :---: |
+| Mandelbrot CPU   | 4096 x 4096   | 1000   |  702.43  |
+| Mandelbrot GPU   | 4096 x 4096   | 1000     |  1.92   |
+
+
+The above table compares the execution time for generating a Mandelbrot set using a simple implementation on the CPU versus using the GPU with OpenCL for two different scenarios. The first scenario is when the image size is 4096 x 4096 and the maximum number of iterations is 100. The second scenario is when the image size is still 4096 x 4096 but the maximum number of iterations is 1000.
+
+In the first scenario, the Mandelbrot CPU method took 88.57 seconds to generate the image while the Mandelbrot GPU method took only 0.58 seconds. This is a significant difference and illustrates the power of using the GPU for parallel processing.
+
+In the second scenario, the Mandelbrot CPU method took 702.43 seconds to generate the image while the Mandelbrot GPU method took only 1.92 seconds. The difference in execution time between the two methods is still significant and illustrates the benefits of using the GPU for more demanding workloads.
+
+It can be concluded that the use of GPU (OpenCL) is a very powerful tool for optimizing tasks that can be parallelized, such as the Mandelbrot set generation. The GPU implementation is much faster than the CPU implementation, regardless of the number of iterations.
+
 # Hardware 
 
 Macbook Pro M1 8GB
